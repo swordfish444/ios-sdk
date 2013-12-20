@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" initialViewController="DDA-qp-lr3">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - Offers-->
+        <scene sceneID="HOy-wN-dk2">
+            <objects>
+                <navigationController storyboardIdentifier="OfferNav" definesPresentationContext="YES" id="Kc1-e1-BO2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Offers" image="Icon-Discover2.png" id="SwX-ja-leG"/>
+                    <navigationItem key="navigationItem" id="t5d-31-2co"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HKl-IA-Al3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3" kind="relationship" relationship="rootViewController" id="ux6-gq-8ym"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q09-HB-nL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="471"/>
+        </scene>
+        <!--Offers View Controller - Second-->
+        <scene sceneID="13">
+            <objects>
+                <viewController storyboardIdentifier="OfferVC" title="Second" id="3" customClass="OffersViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="17">
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="234" sectionHeaderHeight="22" sectionFooterHeight="22" id="daJ-4P-Pvv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="PropertyCell" rowHeight="239" id="mld-dI-3YR" customClass="PropertyCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="239"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mld-dI-3YR" id="fWF-Og-q6s">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="239"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="list-item-bkg.png" id="DYV-mz-IvW">
+                                                    <rect key="frame" x="5" y="5" width="309" height="226"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" id="GvG-8z-O9y" userLabel="View Showcase">
+                                                    <rect key="frame" x="8" y="6" width="304" height="181"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Kkl-u4-A3A">
+                                                            <rect key="frame" x="0.0" y="0.0" width="304" height="181"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="zyF-Vk-K66">
+                                                            <rect key="frame" x="134" y="71" width="37" height="37"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="color" red="0.19283615539999999" green="0.2635831474" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </activityIndicatorView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" id="Q0g-Ff-GCw" userLabel="View Description">
+                                                    <rect key="frame" x="12" y="194" width="298" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pRZ-xy-XVx">
+                                                            <rect key="frame" x="8" y="0.0" width="282" height="31"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="imageVShowcase" destination="Kkl-u4-A3A" id="WqE-kS-9GS"/>
+                                            <outlet property="indicatorVShowcase" destination="zyF-Vk-K66" id="gDi-ze-tXe"/>
+                                            <outlet property="labelVDescription" destination="pRZ-xy-XVx" id="iC2-4W-UOE"/>
+                                            <outlet property="viewDescription" destination="Q0g-Ff-GCw" id="EK1-tV-lHd"/>
+                                            <outlet property="viewShowcase" destination="GvG-8z-O9y" id="O4c-Zt-5UF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3" id="hEc-Js-roc"/>
+                                    <outlet property="delegate" destination="3" id="w5M-on-Eoa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Offers" image="Icon-Discover2.png" id="6"/>
+                    <navigationItem key="navigationItem" title="Offers" id="2CZ-Vx-kq0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="uyV-1S-wKP">
+                            <connections>
+                                <action selector="refreshBtnClicked:" destination="3" id="83Y-F0-KjC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="btnRefresh" destination="uyV-1S-wKP" id="yJR-42-pLx"/>
+                        <outlet property="tableView" destination="daJ-4P-Pvv" id="ziZ-4Y-2Gv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163" y="550"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Wqy-IA-W2j">
+            <objects>
+                <viewController id="DDA-qp-lr3" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="jwY-iF-J4a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" id="a6d-3p-VQr" userLabel="View BG Color">
+                                <rect key="frame" x="0.0" y="83" width="320" height="485"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sEw-0K-p7h">
+                                        <rect key="frame" x="0.0" y="216" width="320" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9WH-Vw-1Rl">
+                                        <rect key="frame" x="85" y="172" width="150" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.21176472306251526" green="0.7137255072593689" blue="0.76470595598220825" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginBtnSelected:" destination="DDA-qp-lr3" eventType="touchUpInside" id="9nK-Zr-JRA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Footmarks-Logo.png" id="W7W-Pb-b4I">
+                                <rect key="frame" x="0.0" y="-9" width="320" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="9WH-Vw-1Rl" id="1XJ-eg-33b"/>
+                        <outlet property="imgVLogo" destination="W7W-Pb-b4I" id="MXD-0s-xZQ"/>
+                        <outlet property="lblLoading" destination="sEw-0K-p7h" id="7hT-KH-jep"/>
+                        <outlet property="viewBG" destination="a6d-3p-VQr" id="Dpk-B8-icV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pfs-dn-lFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="471"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Footmarks-Logo.png" width="2206" height="455"/>
+        <image name="Icon-Discover2.png" width="30" height="30"/>
+        <image name="list-item-bkg.png" width="309" height="225"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
